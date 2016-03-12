@@ -9,10 +9,17 @@ $color-lgray = #777777
 $color-dgray = $color-border
 $color-tag-a = #4078C0
 $color-tag-tr = #F8F8F8
+$color-font = #333333
+$color-img-shadow = #555555
+
+.margin-tb-zero
+    margin-top: 0
+    margin-bottom: 0
 
 .markdown-body
     font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
     font-size: 16px
+    color: $color-font
     line-height: 1.6
     word-wrap: break-word
     padding: 45px
@@ -71,11 +78,17 @@ $color-tag-tr = #F8F8F8
 
         ol
             list-style-type: lower-roman
+            @extend .margin-tb-zero
         ul
             list-style-type: circle
+            @extend .margin-tb-zero
+
+            ol
+                @extend .margin-tb-zero
 
             ul
                 list-style-type: square
+                @extend .margin-tb-zero
 
     ol
         list-style-type: decimal
@@ -154,6 +167,12 @@ $color-tag-tr = #F8F8F8
         color: $color-tag-a
         text-decoration: none
         background: transparent
+
+    img
+        width: 100%
+        height: 100%
+        border-radius: 4px;
+        box-shadow: 0 0 10px $color-img-shadow
 
     strong
         font-weight: bold
