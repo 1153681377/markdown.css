@@ -1,0 +1,25 @@
+{
+  "name": "markdown.css",
+  "version": "1.0.0",
+  "description": "markdown styles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamcco/markdown.css.git"
+  },
+  "keywords": [
+    "markdown",
+    "styles"
+  ],
+  "author": "年糕小豆汤",
+  "bugs": {
+    "url": "https://github.com/iamcco/markdown.css/issues"
+  },
+  "homepage": "https://github.com/iamcco/markdown.css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.1.1",
+    "gulp-markdown": "^1.2.0",
+    "gulp-stylus": "^2.3.1",
+    "nib": "^1.1.0"
+  }
+}
