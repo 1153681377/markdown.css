@@ -23,10 +23,11 @@ gulp.task('ejs', ['markdown', 'stylus'], function() {
     .pipe(gulp.dest('./public'));
 });
 
-gulp.task('public', ['ejs']);
-
 gulp.task('build', function() {
     return gulp.src('./src/styles/*/*.styl')
     .pipe(stylus({use: nib}))
     .pipe(gulp.dest('./dest'));
 });
+
+gulp.task('public', ['ejs', 'build']);
+
