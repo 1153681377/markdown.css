@@ -1,11 +1,19 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.margin-tb-zero,
+.markdown-body ol ol,
+.markdown-body ul ol,
+.markdown-body ol ul,
+.markdown-body ul ul,
+.markdown-body ol ul ol,
+.markdown-body ul ul ol,
+.markdown-body ol ul ul,
+.markdown-body ul ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .markdown-body {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
+  color: #333;
   line-height: 1.6;
   word-wrap: break-word;
   padding: 45px;
@@ -19,6 +27,11 @@
 }
 .markdown-body > *:last-child {
   margin-bottom: 0 !important;
+}
+.markdown-body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .markdown-body h1,
 .markdown-body h2,
@@ -167,6 +180,14 @@
   color: #4078c0;
   text-decoration: none;
   background: transparent;
+}
+.markdown-body img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 10px #555;
+  box-shadow: 0 0 10px #555;
 }
 .markdown-body strong {
   font-weight: bold;
