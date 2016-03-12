@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <title>Github like styles</title>
     <link rel="stylesheet" href="./styles/github/markdown.css">
+    <style>
+         body {
+            width: 980px;
+            margin: 45px auto;
+        }
+        .title {
+            display: block;
+            padding: 9px 10px 10px;
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+            background-color: #f5f5f5;
+            border: 1px solid #d8d8d8;
+            border-bottom: 0;
+            border-radius: 3px 3px 0 0;
+        }
+        a {
+            text-decoration: none;
+            color: #282828;
+        }
+    </style>
 </head>
 <body>
+    <h3 class="title"><a href="https://github.com/iamcco/markdown.css">Github like styles: https://github.com/iamcco/markdown.css</a></h3>
     <div class="markdown-body">
         <% include ../../temp/markdown.html %>
     </div>
