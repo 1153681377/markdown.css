@@ -48,9 +48,17 @@ This site was built using [Github Pages](https://pages.github.com).
    * Mention all the members of my team
      * Ask for feedbackk
 
-- [x] Finish my changes
-- [ ] Push my commits to Github
-- [ ] Open a pull request
+<ul>
+    <li class="task-list-item" checked="">
+        <input type="checkbox" class="task-list-item" checked="" disabled=""> Finish my changes
+    </li>
+    <li class="task-list-item">
+        <input type="checkbox" class="task-list-item" disabled=""> Push my commits to Github
+    </li>
+    <li class="task-list-item">
+        <input type="checkbox" class="task-list-item" disabled=""> Open a pull request
+    </li>
+</ul>
 
 key  | value | desc
 ----- | -------- | -----
